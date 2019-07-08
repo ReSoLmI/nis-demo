@@ -1,0 +1,22 @@
+image: docker:stable
+stages:
+  - package
+  - deploy
+
+package:
+  stage: package
+  script:
+    - docker build -t mcloud/nis-demo-web .
+  allow_failure: false
+  tags:
+    - docker-runner
+
+
+deploy:
+  stage: deploy
+  script:
+    - docker rm -f nis-demo-web || true
+    - docker run -d --name nis-demo-web -p 8888:8080 -t mcloud/nis-demo-web
+    - docker rmi $(docker images -f "dangling=true" -q) || true  
+  tags:
+    - docker-runner

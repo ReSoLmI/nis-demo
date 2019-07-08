@@ -1,0 +1,18 @@
+{
+  "patIndexNo": "001床",
+  "name": "张伟",
+  "sex": "男",
+  "age": "69岁",
+  "sysCode": "90049362",
+  "admissionTime": "2017-05-01 09:30",
+  "deptName": "消化内科",
+  "attendDrName": "万年",
+  "allergy": "青霉素",
+  "chargeTypeName": "普通病人",
+  "prePayment": "3000.00",
+  "totalCost": "2523.3",
+  "contactNumber": "18668081520",
+  "diagnosis": "累及循环和呼吸系统特指症状和体征。",
+  "diet": "清淡为主，忌辛辣、生冷。",
+  "signlist": ["Ⅰ", "新", "疮", "跌", "束", "管", "嘱", "温"]
+}
